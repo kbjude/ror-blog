@@ -1,7 +1,7 @@
 
 <%= form_with model: @article, local: true do |form| %>
  
-    <% if @articles.errors.any? %>
+    <% if @article.errors.any? %>
       <div id="error_explanation">
         <h2>
           <%= pluralize(@articles.errors.count, "error") %> prohibited
